@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     if (basisCash) {
       fetchStats().catch((err) => console.error(err.stack));
     }
-  }, [basisCash]);
+  }, [basisCash, fetchStats]);
 
   const cashAddr = useMemo(() => basisCash?.BAC.address, [basisCash]);
   const shareAddr = useMemo(() => basisCash?.BAS.address, [basisCash]);

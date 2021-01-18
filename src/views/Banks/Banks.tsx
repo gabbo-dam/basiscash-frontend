@@ -7,6 +7,7 @@ import BankCards from './BankCards';
 import { useWallet } from 'use-wallet';
 import Button from '../../components/Button';
 import styled from 'styled-components';
+import StableCoinCard from './StableCoinCards'
 
 const Banks: React.FC = () => {
   const { path } = useRouteMatch();
@@ -24,9 +25,18 @@ const Banks: React.FC = () => {
           {!!account ? (
             <BankCards />
           ) : (
-            <Center>
-              <Button onClick={() => connect('injected')} text="Unlock Wallet" />
-            </Center>
+            <>
+            <ThreeColumns>
+              <StableCoinCard />
+              <StableCoinCard />
+              <StableCoinCard />
+            </ThreeColumns>
+            <TwoColumns>
+              <StableCoinCard />
+              <StableCoinCard />
+            </TwoColumns>
+           {/* <BankCards /> */}
+            </>
           )}
         </Route>
         <Route path={`${path}/:bankId`}>
@@ -40,8 +50,20 @@ const Banks: React.FC = () => {
 const Center = styled.div`
   display: flex;
   flex: 1;
-  align-items: center;
+  align-items: center;  
   justify-content: center;
+`;
+
+const ThreeColumns = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+`;
+const TwoColumns = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 `;
 
 export default Banks;
