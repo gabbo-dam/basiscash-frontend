@@ -5,6 +5,7 @@ import PageHeader from '../../components/PageHeader';
 import Bank from '../Bank';
 import BankCards from './BankCards';
 import { useWallet } from 'use-wallet';
+import Button from '../../components/Button'
 
 import styled from 'styled-components';
 import StableCoinCard from './StableCoinCards'
@@ -25,18 +26,9 @@ const Banks: React.FC = () => {
           {!!account ? (
             <BankCards />
           ) : (
-            <>
-            <ThreeColumns>
-              <StableCoinCard symbol={'DAI'} />
-              <StableCoinCard symbol={'USDC'} />
-              <StableCoinCard symbol={'SUSD'} />
-            </ThreeColumns>
-            <TwoColumns>
-              <StableCoinCard symbol={'USDT'} />
-              <StableCoinCard symbol={'yCRV'} />
-            </TwoColumns>
-
-            </>
+            <Center>
+            <Button onClick={() => connect('injected')} text="Unlock Wallet" />
+          </Center>
           )}
         </Route>
         <Route path={`${path}/:bankId`}>
