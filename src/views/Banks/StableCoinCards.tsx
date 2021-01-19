@@ -6,14 +6,18 @@ import Card from '../../components/Card';
 import CardContent from '../../components/CardContent';
 import CardIcon from '../../components/CardIcon';
 import TokenSymbol from '../../components/TokenSymbol';
+import { Bank, BankInfo } from '../../basis-cash';
 
 
 type BasisLogoProps = {
   symbol: string;
   size?: number;
+  bank: Bank;
 }
 
-const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64 }) => {
+
+
+const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64, bank }) => {
   
   return (
 
@@ -25,8 +29,8 @@ const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64 }) => {
           </CardIcon>
           <StyledTitle>Earn BAS by DAI</StyledTitle>
             <StyledDetails>
-              <StyledDetail>Deposit DAI </StyledDetail>
-              <StyledDetail>Earn Basis BAS </StyledDetail>
+              <StyledDetail>Deposit {bank.depositTokenName.toUpperCase()} </StyledDetail>
+              <StyledDetail>Earn {`Basis ${bank.earnTokenName}`} </StyledDetail>
             </StyledDetails>
             <Button text="Select"  />
         </StyledContent>

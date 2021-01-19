@@ -5,7 +5,7 @@ import PageHeader from '../../components/PageHeader';
 import Bank from '../Bank';
 import BankCards from './BankCards';
 import { useWallet } from 'use-wallet';
-import Button from '../../components/Button';
+
 import styled from 'styled-components';
 import StableCoinCard from './StableCoinCards'
 
@@ -27,7 +27,7 @@ const Banks: React.FC = () => {
           ) : (
             <>
             <ThreeColumns>
-              <StableCoinCard symbol={'DAI'} />
+              <StableCoinCard symbol={'DAI'} bank={bank} />
               <StableCoinCard symbol={'USDC'} />
               <StableCoinCard symbol={'SUSD'} />
             </ThreeColumns>
