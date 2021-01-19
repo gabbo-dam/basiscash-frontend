@@ -44,10 +44,20 @@ const BankCards: React.FC = () => {
       )}
       <StyledRow>
         {activeBanks.map((bank, i) => (
+          <>
           <React.Fragment key={bank.name}>
             <BankCard bank={bank} />
-            {i < activeBanks.length - 1 && <StyledSpacer />}
+            {i < activeBanks.length - 0 && <StyledSpacer />}
           </React.Fragment>
+          <React.Fragment key={bank.name}>
+            <BankCard bank={bank} />
+            {i < activeBanks.length - 0 && <StyledSpacer />}
+          </React.Fragment>
+          <React.Fragment key={bank.name}>
+            <BankCard bank={bank} />
+            {i < activeBanks.length - 0 && <StyledSpacer />}
+          </React.Fragment>
+          </>
         ))}
       </StyledRow>
       {inactiveRows[0].length > 0 && (

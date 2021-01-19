@@ -24,7 +24,11 @@ const Banks: React.FC = () => {
             subtitle="Earn Basis Shares by providing liquidity"
           />
           {!!account ? (
+            <>
             <BankCards />
+            
+            
+            </>
           ) : (
             <Center>
             <Button onClick={() => connect('injected')} text="Unlock Wallet" />
