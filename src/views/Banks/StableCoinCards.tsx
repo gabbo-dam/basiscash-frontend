@@ -6,7 +6,7 @@ import Card from '../../components/Card';
 import CardContent from '../../components/CardContent';
 import CardIcon from '../../components/CardIcon';
 import TokenSymbol from '../../components/TokenSymbol';
-import { Bank, BankInfo } from '../../basis-cash';
+import { Bank } from '../../basis-cash';
 
 
 type BasisLogoProps = {

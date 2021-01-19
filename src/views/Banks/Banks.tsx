@@ -27,7 +27,7 @@ const Banks: React.FC = () => {
           ) : (
             <>
             <ThreeColumns>
-              <StableCoinCard symbol={'DAI'} bank={bank} />
+              <StableCoinCard symbol={'DAI'} />
               <StableCoinCard symbol={'USDC'} />
               <StableCoinCard symbol={'SUSD'} />
             </ThreeColumns>
