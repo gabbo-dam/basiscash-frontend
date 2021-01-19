@@ -5,16 +5,23 @@ import Button from '../../components/Button';
 import Card from '../../components/Card';
 import CardContent from '../../components/CardContent';
 import CardIcon from '../../components/CardIcon';
+import TokenSymbol from '../../components/TokenSymbol';
 
 
-const StableCoinCard = () => {
+type BasisLogoProps = {
+  symbol: string;
+  size?: number;
+}
+
+const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64 }) => {
+  
   return (
 
     <Card>
       <CardContent>
         <StyledContent>
           <CardIcon>
-
+            <TokenSymbol symbol={symbol} size={54} />
           </CardIcon>
           <StyledTitle>Earn BAS by DAI</StyledTitle>
             <StyledDetails>

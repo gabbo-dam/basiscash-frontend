@@ -27,15 +27,15 @@ const Banks: React.FC = () => {
           ) : (
             <>
             <ThreeColumns>
-              <StableCoinCard />
-              <StableCoinCard />
-              <StableCoinCard />
+              <StableCoinCard symbol={'BAC'} />
+              <StableCoinCard symbol={'BAC'} />
+              <StableCoinCard symbol={'BAC'} />
             </ThreeColumns>
             <TwoColumns>
-              <StableCoinCard />
-              <StableCoinCard />
+              <StableCoinCard symbol={'BAC'} />
+              <StableCoinCard symbol={'BAC'} />
             </TwoColumns>
-           {/* <BankCards /> */}
+
             </>
           )}
         </Route>
