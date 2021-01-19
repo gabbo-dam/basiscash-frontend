@@ -15,6 +15,9 @@ const StyledCard = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+
+
+  
 `
 
 export default Card

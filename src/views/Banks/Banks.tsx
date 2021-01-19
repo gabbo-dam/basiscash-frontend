@@ -48,16 +48,6 @@ const Center = styled.div`
   justify-content: center;
 `;
 
-const ThreeColumns = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 24px;
-`;
-const TwoColumns = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-`;
+
 
 export default Banks;
