@@ -26,8 +26,6 @@ const Banks: React.FC = () => {
           {!!account ? (
             <>
             <BankCards />
-            
-            
             </>
           ) : (
             <Center>

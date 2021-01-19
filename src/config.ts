@@ -53,7 +53,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'BACDAIPool',
     depositTokenName: 'DAI',
     earnTokenName: 'BAC',
-    finished: true,
+    finished: false,
     sort: 3,
   },
   BACUSDCPool: {
@@ -61,7 +61,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'BACUSDCPool',
     depositTokenName: 'USDC',
     earnTokenName: 'BAC',
-    finished: true,
+    finished: false,
     sort: 4,
   },
   BACSUSDPool: {
@@ -69,7 +69,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'BACSUSDPool',
     depositTokenName: 'SUSD',
     earnTokenName: 'BAC',
-    finished: true,
+    finished: false,
     sort: 5,
   },
   BACUSDTPool: {
@@ -77,7 +77,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'BACUSDTPool',
     depositTokenName: 'USDT',
     earnTokenName: 'BAC',
-    finished: true,
+    finished: false,
     sort: 6,
   },
   BACyCRVPool: {
@@ -85,7 +85,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'BACyCRVPool',
     depositTokenName: 'yCRV',
     earnTokenName: 'BAC',
-    finished: true,
+    finished: false,
     sort: 7,
   },
   DAIBACLPTokenSharePool: {
@@ -93,7 +93,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'DAIBACLPTokenSharePool',
     depositTokenName: 'BAC_DAI-UNI-LPv2',
     earnTokenName: 'BAS',
-    finished: false,
+    finished: true,
     sort: 1,
   },
   DAIBASLPTokenSharePool: {
@@ -101,7 +101,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     contract: 'DAIBASLPTokenSharePool',
     depositTokenName: 'BAS_DAI-UNI-LPv2',
     earnTokenName: 'BAS',
-    finished: false,
+    finished: true,
     sort: 2,
   },
 };
