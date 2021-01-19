@@ -12,12 +12,12 @@ import { Bank, BankInfo } from '../../basis-cash';
 type BasisLogoProps = {
   symbol: string;
   size?: number;
-  bank: Bank;
+
 }
 
 
 
-const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64, bank }) => {
+const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64 }) => {
   
   return (
 
@@ -29,8 +29,8 @@ const StableCoinCard: React.FC<BasisLogoProps> = ({ symbol, size = 64, bank }) =
           </CardIcon>
           <StyledTitle>Earn BAS by DAI</StyledTitle>
             <StyledDetails>
-              <StyledDetail>Deposit {bank.depositTokenName.toUpperCase()} </StyledDetail>
-              <StyledDetail>Earn {`Basis ${bank.earnTokenName}`} </StyledDetail>
+              <StyledDetail>Deposit  </StyledDetail>
+              <StyledDetail>Earn  </StyledDetail>
             </StyledDetails>
             <Button text="Select"  />
         </StyledContent>
